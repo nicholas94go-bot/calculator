@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project: calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+       <input type="text" id="display" class="inputDisplay" disabled>
+
+        
+        <div class="btn">
+
+            <div class="row1">
+                <button class="clearScreen" onclick="clearScreen()" >Clear</button>
+                <button class="operators" onclick="appendOperator('()')">()</button>                
+                <button class="operators" onclick="appendOperator('%')">%</button>
+                <button class="operators" onclick="appendOperator('/')">/</button>
+            </div>
+        
+            <div class="row2">
+                <button class="numbers" onclick="appendNumber('7')">7</button>
+                <button class="numbers" onclick="appendNumber('8')">8</button>
+                <button class="numbers" onclick="appendNumber('9')">9</button>
+                <button class="operators" onclick="appendOperator('*')">*</button>
+            </div>
+        
+            <div class="row3">
+                <button class="numbers" onclick="appendNumber('4')">4</button>
+                <button class="numbers" onclick="appendNumber('5')">5</button>
+                <button class="numbers" onclick="appendNumber('6')">6</button>
+                <button class="operators" onclick="appendOperator('-')">-</button>
+            </div>
+        
+            <div class="row4">
+                <button class="numbers" onclick="appendNumber('1')">1</button>
+                <button class="numbers" onclick="appendNumber('2')">2</button>
+                <button class="numbers" onclick="appendNumber('3')">3</button>
+                <button class="operators" onclick="appendOperator('+')">+</button>
+            </div>
+
+            <div class="row5">
+                <button class="numbers" onclick="appendNumber('0')">0</button>
+                <button class="operators" onclick="appendOperator('.')">.</button>
+                <button class="equalBtn" onclick="calculate()">=</button>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>
